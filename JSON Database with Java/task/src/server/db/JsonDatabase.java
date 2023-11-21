@@ -15,9 +15,6 @@ public class JsonDatabase implements Database {
     private static final String PATH_TO_DIRECTORY = System.getProperty("user.dir");
     private static final String PATH_TO_DB = PATH_TO_DIRECTORY + "/src/server/data/db.json";
 
-    // FOR DEVELOPMENT
-    //    private static final String PATH_TO_DB = PATH_TO_DIRECTORY + "/JSON Database with Java/task/src/server/data/db.json";
-
     @Override
     public synchronized Object get(Object key) throws IllegalArgumentException {
         Object result;

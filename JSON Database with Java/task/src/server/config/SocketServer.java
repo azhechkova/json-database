@@ -41,7 +41,6 @@ public class SocketServer implements Server {
                         executor.shutdownNow();
                         break;
                     }
-                    Thread.currentThread().interrupt();
                 } catch (Exception e) {
                     System.out.println("ERROR IN RUNNING: " + e.getMessage());
                 }

@@ -16,14 +16,6 @@ public class JsonDatabaseManager implements DatabaseManager {
         this.db = new JsonDatabase();
     }
 
-    public Database getDb() {
-        return db;
-    }
-
-    public void setDb(Database db) {
-        this.db = db;
-    }
-
     @Override
     public void validateBody(RequestBody body) throws IllegalArgumentException {
         if (body == null) {
@@ -57,8 +49,6 @@ public class JsonDatabaseManager implements DatabaseManager {
             }
 
             Object key = body.getKey();
-//            var parsedKey = GSON.fromJson(key, Object.class);
-//            System.out.println(parsedKey);
             Object result = null;
 
             switch (dbMethod) {
