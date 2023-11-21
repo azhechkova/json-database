@@ -1,0 +1,5 @@
+{
+  "type":"set",
+  "key":["person", "car", "ccc"],
+  "value": "New name"
+}
